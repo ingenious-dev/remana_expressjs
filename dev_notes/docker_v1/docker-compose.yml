@@ -1,0 +1,21 @@
+# + https://redis.io/learn/operate/docker/nodejs-nginx-redis
+services:
+  web1:
+    restart: on-failure
+    build: ./
+    hostname: web1
+    ports:
+      - '3001:3000'
+  web2:
+    restart: on-failure
+    build: ./
+    hostname: web2
+    ports:
+      - '3002:3000'
+  nginx:
+    build: ./nginx
+    ports:
+    - '3000:80'
+    depends_on:
+    - web1
+    - web2
