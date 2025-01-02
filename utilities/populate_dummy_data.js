@@ -1,3 +1,5 @@
+const { serverURL } = require("../config");
+
 // + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
 // 
 // While the test required an OPEN API integration for populating the
@@ -150,7 +152,7 @@ async function populateUserAndActivity(accessToken, update_picture) {
             return;
         }
         const json = await response.json();
-        fetch('http://localhost:3000/auth/me', {
+        fetch(`${serverURL}/auth/me`, {
             method: 'PATCH',
             body: JSON.stringify({
                 "profile_picture": json.results[0].picture.large
