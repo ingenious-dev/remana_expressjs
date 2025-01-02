@@ -189,7 +189,7 @@ async function populateUserAndActivity(accessToken, update_picture) {
                 date_of_activity: activity_date_str,
                 location: location_options[getRandomInt(location_options.length)],
             }
-            fetch('http://localhost:3000/activity', {
+            fetch(`${serverURL}/activity`, {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
