@@ -14,13 +14,13 @@
     "email": "suhudujoseph@gmail.com",
     "url": "https://joseph.co.ke/"
   },
-  "homepage": "https://github.com/passport/remana_expressjs",
+  "homepage": "https://github.com/ingenious-dev/remana_expressjs",
   "repository": {
     "type": "git",
-    "url": "git://github.com/passport/remana_expressjs.git"
+    "url": "git://github.com/ingenious-dev/remana_expressjs.git"
   },
   "bugs": {
-    "url": "https://github.com/passport/remana_expressjs/issues"
+    "url": "https://github.com/ingenious-dev/remana_expressjs/issues"
   },
   "license": "Unlicense",
   "scripts": {
