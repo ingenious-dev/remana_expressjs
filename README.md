@@ -1,6 +1,23 @@
 # REMANA EXPRESS BACKEND
 
+![N|Solid](./REMANA-logo.png)
+
 Building a `RE`lationship `MANA`gement API service using [Express](https://expressjs.com/) & [Sequelize](https://sequelize.org/).
+
+This is the Express JS Backend for the `Vue JS` frontend. The code for the `Vue JS` frontend can be found on the following link:   
+https://github.com/ingenious-dev/remana_vuejs
+
+## Development setup
+To setup a dev environment for coding, clone the repository and then run `npm install` to get the needed dependencies.
+
+## Running with Docker
+### Docker Compose
+For testing, a docker container is included in the repository. To build and run the container make sure you have docker installed for your OS. Then build and start the docker container using this command:
+```
+docker-compose up -d
+```
+ 
+The `Express JS` backend can be accessed on `http://localhost:3000`.
 
 # References
 The following is a list of resources that were useful during development
